@@ -55,6 +55,7 @@
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
  $${Wilson_score_interval}=\frac {\hat p+\frac 1{2n}+z^2_{1-\frac{\alpha}{2}}\pm z_{1-\frac\alpha{2}}\sqrt{\frac {\hat p(1-\hat p)}{n}+\frac {z^2_{1-\frac \alpha{2}}}{4n^2}}}{1+\frac 1{n}z^2_{1-\frac \alpha{2}}}$$
 
+![](http://latex.codecogs.com/gif.latex?Fib(n)=\\frac{ \\left(\\phi ^{n} -\\gamma^{n} \\right ) }{\\sqrt{5})
 
 #### 语料归属标签的bayes概率计算
 

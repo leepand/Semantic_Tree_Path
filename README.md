@@ -3,7 +3,6 @@
 文本数据结构化在知识图谱、标签标注、chatbot等应用中占据重要地位，本项目基于语义映射树、word2vec、贝叶斯、威尔逊置信区间等知识对文本语料进行结构化抽取。抽取逻辑：先计算语料归属语义树中相关节点的概率和置信度，然后根据树结构抽取合并当前标注的路径。假设语料：小米科技生产的手机很实惠。抽取后的可能路径为：科技—>制造—>电子产品—>正面
 
 #### 语义树规则模版
-<img src="http://latex.codecogs.com/gif.latex?35*d_5+1(\oe%20)"/>
 
 - 语义图（树）-标签体系
 
@@ -54,7 +53,7 @@
 - 原理解释：置信区间的宽窄与样本的数量有关，比如，某条语料中归属A标签的标签词1个，9个为其他标签；另外一条归属B标签的有3个，27个为其他标签，两个标签的投票比率都是10%，但是B的置信度要高于A
 
 - 公式
-
+<img src="http://latex.codecogs.com/gif.latex?{Wilson_score_interval}=\frac{\hat p+\frac 1{2n}+z^2_{1-\frac{\alpha}{2}}\pm z_{1-\frac\alpha{2}}\sqrt{\frac {\hat p(1-\hat p)}{n}+\frac {z^2_{1-\frac \alpha{2}}}{4n^2}}}{1+\frac 1{n}z^2_{1-\frac \alpha{2}}}"/>
   $${Wilson_score_interval}=\frac {\hat p+\frac 1{2n}+z^2_{1-\frac{\alpha}{2}}\pm z_{1-\frac\alpha{2}}\sqrt{\frac {\hat p(1-\hat p)}{n}+\frac {z^2_{1-\frac \alpha{2}}}{4n^2}}}{1+\frac 1{n}z^2_{1-\frac \alpha{2}}}$$
 
 

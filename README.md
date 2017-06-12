@@ -72,10 +72,10 @@
 #### example
 
 ```python
-C++ compile:
+##C++ compile:
 make
-python:
-
+./tag_tree -in cpluss.txt -json json.conf -sim ../data/vec.sim.20 -out out.txt -debug 1
+##python:
 load_rules('./rules/rule.json')
 b_p=simplebayes.SimpleBayes(cache_path='./my/tree/')
 b_p.get_cache_location()

@@ -53,7 +53,7 @@
 - 原理解释：置信区间的宽窄与样本的数量有关，比如，某条语料中归属A标签的标签词1个，9个为其他标签；另外一条归属B标签的有3个，27个为其他标签，两个标签的投票比率都是10%，但是B的置信度要高于A
 
 - 公式
-<img src="http://latex.codecogs.com/gif.latex?{Wilson_score_interval}=\frac{\hat p+\frac 1{2n}+z^2_{1-\frac{\alpha}{2}}\pm z_{1-\frac\alpha{2}}\sqrt{\frac {\hat p(1-\hat p)}{n}+\frac {z^2_{1-\frac \alpha{2}}}{4n^2}}}{1+\frac 1{n}z^2_{1-\frac \alpha{2}}}"/>
+<img src="http://latex.codecogs.com/gif.latex?Wilson_score_interval=\frac{\hat p+\frac 1{2n}+z^2_{1-\frac{\alpha}{2}}\pm z_{1-\frac\alpha{2}}\sqrt{\frac {\hat p(1-\hat p)}{n}+\frac {z^2_{1-\frac \alpha{2}}}{4n^2}}}{1+\frac 1{n}z^2_{1-\frac \alpha{2}}}"/>
   $${Wilson_score_interval}=\frac {\hat p+\frac 1{2n}+z^2_{1-\frac{\alpha}{2}}\pm z_{1-\frac\alpha{2}}\sqrt{\frac {\hat p(1-\hat p)}{n}+\frac {z^2_{1-\frac \alpha{2}}}{4n^2}}}{1+\frac 1{n}z^2_{1-\frac \alpha{2}}}$$
 
 

@@ -93,6 +93,21 @@ class Annoy(BaseANN):
                      (self._annoy.get_nns_by_item(index, 5,include_distances=True))[1] ))
         knn_word_dist=collections.OrderedDict({self.id2word[int(k)]:(1-(v**2)/2) for k,v in knn.items()})       
         return knn_word_dist
+    def get_cosine_by_items(self,word1,word2):
+        if word1 in self.word2id and word2 in self.word2id:
+            index1=self.word2id[str(word1)]
+            index2=self.word2id[str(word2)]
+            cosine=1-(self._annoy.get_distance(index1, index2)**2)/2
+            return cosine
+        else:
+            return 'NoItem'
 #build annoy tree
 an=Annoy(metric = 'angular',n_trees=10,search_k=10)
 an.fit(vecpath='./data/wiki_vec.bin')
+##example
+print an.get_cosine_by_items('篮球','乔丹')
+print an.get_cosine_by_items('奥尼尔','乔丹')
+##predict
+bn=Annoy(metric = 'angular',n_trees=10,search_k=10)
+bn.predict(annoytreepath='wiki2.ann')
+print bn.get_cosine_by_items('奥尼尔','乔丹')

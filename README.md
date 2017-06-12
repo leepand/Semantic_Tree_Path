@@ -45,17 +45,18 @@
 #### 威尔逊区间-标签置信
 
 - 计算每个标签的投票率（即一个语料归属该标签的标签词的比率）
+
 - 计算每个投票率低置信区间（95%）
+
 - 根据置信区间的下限值作为该标签的置信度
+
 - 原理解释：置信区间的宽窄与样本的数量有关，比如，某条语料中归属A标签的标签词1个，9个为其他标签；另外一条归属B标签的有3个，27个为其他标签，两个标签的投票比率都是10%，但是B的置信度要高于A
-- 公式：${Wilson_score_interval}=\frac {\hat p+\frac 1{2n}+z^2_{1-\frac{\alpha}{2}}\pm z_{1-\frac\alpha{2}}\sqrt{\frac {\hat p(1-\hat p)}{n}+\frac {z^2_{1-\frac \alpha{2}}}{4n^2}}}{1+\frac 1{n}z^2_{1-\frac \alpha{2}}}$
+
+- 公式
+
+  $${Wilson_score_interval}=\frac {\hat p+\frac 1{2n}+z^2_{1-\frac{\alpha}{2}}\pm z_{1-\frac\alpha{2}}\sqrt{\frac {\hat p(1-\hat p)}{n}+\frac {z^2_{1-\frac \alpha{2}}}{4n^2}}}{1+\frac 1{n}z^2_{1-\frac \alpha{2}}}$$
 
 
-
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
- $${Wilson_score_interval}=\frac {\hat p+\frac 1{2n}+z^2_{1-\frac{\alpha}{2}}\pm z_{1-\frac\alpha{2}}\sqrt{\frac {\hat p(1-\hat p)}{n}+\frac {z^2_{1-\frac \alpha{2}}}{4n^2}}}{1+\frac 1{n}z^2_{1-\frac \alpha{2}}}$$
-
-![](http://latex.codecogs.com/gif.latex?Fib(n)=\\frac{ \\left(\\phi ^{n} -\\gamma^{n} \\right ) }{\\sqrt{5})
 
 #### 语料归属标签的bayes概率计算
 

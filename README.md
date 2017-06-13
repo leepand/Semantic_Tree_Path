@@ -56,7 +56,8 @@
 <img src="http://latex.codecogs.com/gif.latex?Wilson_score_interval=\frac{\hatp+\frac1{2n}+z^2_{1-\frac{\alpha}{2}}\pmz_{1-\frac\alpha{2}}\sqrt{\frac{\hatp(1-\hatp)}{n}+\frac{z^2_{1-\frac\alpha{2}}}{4n^2}}}{1+\frac1{n}z^2_{1-\frac\alpha{2}}}"/>
   $${Wilson_score_interval}=\frac {\hat p+\frac 1{2n}+z^2_{1-\frac{\alpha}{2}}\pm z_{1-\frac\alpha{2}}\sqrt{\frac {\hat p(1-\hat p)}{n}+\frac {z^2_{1-\frac\alpha{2}}}{4n^2}}}{1+\frac1{n}z^2_{1-\frac\alpha{2}}}$$
 
-
+![][1]
+[1]: http://latex.codecogs.com/gif.latex?{Wilson\_score\_interval}=\frac{\hat\\p+\frac1{2n}+z^2_{1-\frac{\alpha}{2}}\pm\\z_{1-\frac\alpha{2}}\sqrt{\frac{\hat\\p(1-\hat\\p)}{n}+\frac{z^2_{1-\frac\alpha{2}}}{4n^2}}}{1+\frac1{n}z^2_{1-\frac\alpha{2}}}
 
 #### 语料归属标签的bayes概率计算
 
